@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 7</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            PULAU JAWA
+          </a>
+          <!-- Tema -->
+          <div>
+              <input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox" class="label">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <div class="ball"></div>
+              </label>
+          </div>
+        </div>
+      </nav>
+    <center>
+    <div>
+            <div class="d-inline-flex p-2 bd-highlight">
+                <!-- Input Provinsi --> 
+                <select class="form-select" aria-label="Default select example" id="pilihProvinsi">
+                    <option disabled="disabled" selected="selected">Pilih Provinsi</option>
+                    <option value="Jawa Barat">Jawa Barat</option>
+                    <option value="Jawa Timur">Jawa Timur</option>
+                    <option value="Jawa Tengah">Jawa Tengah</option>
+                    <option value="Banten">Banten</option>
+                    <option value="Yogyakarta">Yogyakarta</option>
+                  </select>
+                  <!-- Input Kota --> 
+                  <select class="form-select" aria-label="Default select example" id="pilihKota">
+                    <option disabled="disabled" selected="selected">Pilih Kota</option>
+                  </select>
+            </div>
+       
+             <!-- Hasil --> 
+            <p id="hasil">Pilih provinsi dan Kota!</p>
+   
+            <!-- Gambar Peta-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Indonesia_Java_location_map.svg/1382px-Indonesia_Java_location_map.svg.png" alt="" width="200" height="154">
+            
+    </div>
+    </center>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
